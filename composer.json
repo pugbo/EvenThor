@@ -1,0 +1,15 @@
+{
+    "name": "pugbo/eventhor",
+    "description": "Software Kit for Event Management",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "EvenThor contributors",
+            "homepage": "https://github.com/pugbo/EvenThor/graphs/contributors"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.4.0"
+    }
+}
