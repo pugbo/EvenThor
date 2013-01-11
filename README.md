@@ -1,4 +1,4 @@
-eventstorm
+EvenThor
 ==========
 
-Software Kit Management Event
+Software Kit for Event Management
