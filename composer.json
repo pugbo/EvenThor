@@ -8,7 +8,7 @@
             "homepage": "https://github.com/pugbo/EvenThor/graphs/contributors"
         }
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "require": {
         "php": ">=5.4.0"
     }
