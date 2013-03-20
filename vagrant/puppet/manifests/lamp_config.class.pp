@@ -16,4 +16,16 @@ class lamp_config
         logroot         => '/var/log',
         override        => 'All'
     }
+
+    class { 'mysql::server':
+        config_hash => { 'root_password' => 'birra0gradi' }
+    }
+
+    mysql::db { 'eventhor':
+        user     => 'eventhor',
+        password => 'eventhor',
+        host     => 'localhost',
+        grant    => ['all'],
+        charset  => 'utf8'
+    }
 }

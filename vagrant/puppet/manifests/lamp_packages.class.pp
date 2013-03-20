@@ -10,6 +10,10 @@ class lamp_packages
         ensure => 'latest'
     }
 
+    package { 'phpmyadmin' :
+        ensure => 'latest'
+    }
+
     package { 'curl' :
         ensure => 'latest'
     }
