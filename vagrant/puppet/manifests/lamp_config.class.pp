@@ -1,4 +1,5 @@
 class {'apache': }
+class {'apache::mod::php': }
 
 class lamp_config
 {

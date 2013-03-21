@@ -5,11 +5,6 @@ class lamp_packages
         ensure => 'latest'
     }
     
-    $apachepkg = ['apache2-mpm-prefork', 'libapache2-mod-php5']
-    package { $apachepkg :
-        ensure => 'latest'
-    }
-
     package { 'phpmyadmin' :
         ensure => 'latest'
     }
