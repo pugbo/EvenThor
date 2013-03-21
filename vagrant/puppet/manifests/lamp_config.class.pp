@@ -1,4 +1,5 @@
 class {'apache': }
+class {'apache::mod::php': }
 
 class lamp_config
 {
@@ -15,5 +16,17 @@ class lamp_config
         docroot_group   => 'vagrant',
         logroot         => '/var/log',
         override        => 'All'
+    }
+
+    class { 'mysql::server':
+        config_hash => { 'root_password' => 'birra0gradi' }
+    }
+
+    mysql::db { 'eventhor':
+        user     => 'eventhor',
+        password => 'eventhor',
+        host     => 'localhost',
+        grant    => ['all'],
+        charset  => 'utf8'
     }
 }
