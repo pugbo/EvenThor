@@ -5,12 +5,17 @@ class lamp_packages
         ensure => 'latest'
     }
     
-    package { 'phpmyadmin' :
+    package { 'phpmyadmin':
         ensure => 'latest'
     }
 
-    package { 'curl' :
+    package { 'curl':
         ensure => 'latest'
+    }
+
+    package { 'sass':
+        ensure => 'latest',
+        provider => 'gem'
     }
 
     exec { 'install-composer':
