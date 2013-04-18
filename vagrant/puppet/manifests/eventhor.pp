@@ -31,7 +31,14 @@ class { 'locales' :
 
 Exec { path => [ "/bin/", "/sbin/" , "/usr/bin/", "/usr/sbin/", "/usr/local/sbin", "/usr/local/bin", "/opt/vagrant_ruby/bin" ] }
 
-Class['locales']->Class['lamp_packages']->Class['lamp_config']
+exec {'composer install':
+    cwd => '/vagrant',
+    command => 'composer install -o --dev',
+    timeout => 1800,
+	logoutput => true
+}
+
+Class['locales']->Class['lamp_packages']->Class['lamp_config']->Exec['composer install']
 
 include lamp_packages
 include lamp_config
