@@ -1,4 +1,10 @@
+*.php.cache
+*.swp
 *~
 .idea
 .vagrant*
+/app/cache/
+/app/logs/
+/bin/
 /vendor/
+/web/bundles/
