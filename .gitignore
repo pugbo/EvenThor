@@ -4,6 +4,7 @@
 .idea
 .vagrant*
 /app/cache/
+/app/config/parameters.yml
 /app/logs/
 /bin/
 /vendor/
