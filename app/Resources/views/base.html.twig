@@ -28,7 +28,7 @@
             {# Overwrite this block to add your own js here, to get them generated into final files #}
         {% endblock head_script %}
 
-        <title>{% block title %}Mopa Bootstrap Bundle{% endblock title %}</title>
+        <title>{% block title %}{% trans %}common.title{% endtrans %}{% endblock title %}</title>
         <link rel="shortcut icon" href="{{ asset('favicon.ico') }}" />
         {% block head_bottom %}
         {% endblock head_bottom %}
@@ -55,7 +55,7 @@
         <div class="content">
             {% block page_header %}
                 <div class="page-header">
-                    <h1>{% block headline %}Mopa Bootstrap Bundle{% endblock headline %}</h1>
+                    <h1>{% block headline %}{% trans %}common.title{% endtrans %}{% endblock headline %}</h1>
                 </div>
             {% endblock page_header %}
 
@@ -74,7 +74,6 @@
                     {% block content %}
                         <div class="span9">
                             {% block content_content %}
-                                <strong>Hier könnte Ihre Werbung stehen ... </strong>
                             {% endblock content_content %}
                         </div>
                         <div class="span3">
@@ -88,7 +87,7 @@
         </div>
         <footer>
             {% block footer %}
-                <p>&copy; <a href="http://www.mohrenweiserpartner.de" target="_blank">Mohrenweiser & Partner</a> 2011-2013</p>
+                <p>&copy; <a href="http://bologna.grusp.org/" target="_blank">pugBO</a> 2011-2013</p>
             {% endblock footer %}
         </footer>
     </div> <!-- /container -->
