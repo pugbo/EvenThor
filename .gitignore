@@ -9,3 +9,4 @@
 /bin/
 /vendor/
 /web/bundles/
+php-cs-fixer.phar
