@@ -38,12 +38,6 @@ exec {'composer install':
 	logoutput => true
 }
 
-file { 'parameters.yml':
-    path   => '/vagrant/app/config/parameters.yml',
-    ensure => present,
-    source => '/vagrant/app/config/parameters.yml.dist'
-}
-
 Class['locales']->Class['lamp_packages']->Class['lamp_config']->File['parameters.yml']->Exec['composer install']
 
 include lamp_packages
