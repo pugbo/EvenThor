@@ -38,7 +38,7 @@ exec {'composer install':
 	logoutput => true
 }
 
-Class['locales']->Class['lamp_packages']->Class['lamp_config']->File['parameters.yml']->Exec['composer install']
+Class['locales']->Class['lamp_packages']->Class['lamp_config']->Exec['composer install']
 
 include lamp_packages
 include lamp_config

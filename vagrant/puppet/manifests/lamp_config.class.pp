@@ -18,6 +18,8 @@ class lamp_config
         override        => 'All'
     }
 
+    apache::mod { 'rewrite': }
+
     class { 'mysql::server':
         config_hash => { 'root_password' => 'birra0gradi' }
     }
