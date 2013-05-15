@@ -49,6 +49,9 @@
     "config": {
         "bin-dir": "bin"
     },
+    "extra": {
+        "symfony-assets-install": "symlink"
+    },
     "require-dev": {
         "phpunit/phpunit": "3.7.*"
     }
