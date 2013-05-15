@@ -21,15 +21,13 @@
         "sensio/distribution-bundle": "2.2.*",
         "sensio/framework-extra-bundle": "2.2.*",
         "sensio/generator-bundle": "2.2.*",
-        "jms/security-extra-bundle": "1.4.*",
-        "jms/di-extra-bundle": "1.3.*",
         "mopa/bootstrap-bundle": "dev-master@dev",
         "jlong/sass-twitter-bootstrap": "2.3.*",
         "kriswallsmith/assetic": "1.1.*@dev"
     },
     "autoload": {
         "psr-0": {
-            "Eventhor": "src"
+            "Pugbo": "src"
         }
     },
     "scripts": {
