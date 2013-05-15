@@ -1,0 +1,4 @@
+eventhor_main:
+    resource: "@PugboEventhorBundle/Resources/config/routing.yml"
+    prefix:   /
+

@@ -1,5 +1,9 @@
 #!/bin/bash
 
+if [ ! -f /vagrant/app/config/parameters.yml ]; then
+    cd /vagrant/app/config/ && cp parameters.yml.dist parameters.yml
+fi
+
 PUPPET_DIR=/etc/puppet
 
 sed 's/us\.archive/it\.archive/' -i /etc/apt/sources.list
