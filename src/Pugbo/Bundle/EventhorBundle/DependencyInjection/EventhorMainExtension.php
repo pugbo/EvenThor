@@ -1,6 +1,6 @@
 <?php
 
-namespace Eventhor\Bundle\MainBundle\DependencyInjection;
+namespace Pugbo\Bundle\EventhorBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;

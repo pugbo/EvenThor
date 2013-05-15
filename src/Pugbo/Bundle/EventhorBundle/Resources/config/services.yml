@@ -1,5 +1,5 @@
 parameters:
-#    eventhor_main.example.class: Eventhor\Bundle\MainBundle\Example
+#    eventhor_main.example.class: Pugbo\Bundle\EventhorBundle\Example
 
 services:
 #    eventhor_main.example:

@@ -1,6 +1,6 @@
 <?php
 
-namespace Eventhor\Bundle\MainBundle\Controller;
+namespace Pugbo\Bundle\EventhorBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Eventhor\Bundle\MainBundle\Tests\Controller;
+namespace Pugbo\Bundle\EventhorBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
