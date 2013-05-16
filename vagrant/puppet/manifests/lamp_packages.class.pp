@@ -18,9 +18,13 @@ class lamp_packages
         provider => 'gem'
     }
 
+    package{'java7-runtime-headless':
+        ensure => 'latest'
+    }
+
     exec { 'install-composer':
         command => 'curl -s https://getcomposer.org/installer | php && mv composer.phar /usr/local/bin/composer',
-	creates => '/usr/local/bin/composer',
-	require => Package['curl', $phppkg]
+	    creates => '/usr/local/bin/composer',
+	    require => Package['curl', $phppkg]
     }
 }
