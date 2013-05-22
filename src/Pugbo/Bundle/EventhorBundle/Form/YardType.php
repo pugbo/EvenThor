@@ -12,8 +12,8 @@ class YardType extends AbstractType
     {
         $builder
             ->add('title')
-            ->add('description')
-            ->add('open')
+            ->add('description', 'textarea')
+            ->add('open', null, ['required' => false])
         ;
     }
 
