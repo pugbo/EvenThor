@@ -16,6 +16,6 @@ class YardController extends Controller
      */
     public function newAction()
     {
-        return[];
+        return [];
     }
 }
