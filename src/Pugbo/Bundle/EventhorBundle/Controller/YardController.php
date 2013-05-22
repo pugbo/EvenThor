@@ -14,5 +14,8 @@ class YardController extends Controller
     /**
      * @Template()
      */
-    public function newAction() {return[];}
+    public function newAction()
+    {
+        return[];
+    }
 }
