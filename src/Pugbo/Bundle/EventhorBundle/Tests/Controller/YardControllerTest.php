@@ -10,12 +10,13 @@ use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
  */
 class YardControllerTest extends WebTestCase
 {
-    public function testNewPageExists()
+    public function testNewPageSimple()
     {
         $client = static::createClient();
 
         $crawler = $client->request('GET', '/yards/new');
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), 'Status code should be 200');
+        $this->assertTrue($crawler->filter('html:contains("EvenThor")')->count() > 0);
     }
 }
