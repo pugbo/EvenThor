@@ -5,12 +5,12 @@ namespace Pugbo\Bundle\EventhorBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Yard
+ * Project
  *
- * @ORM\Table(name="yards")
- * @ORM\Entity(repositoryClass="Pugbo\Bundle\EventhorBundle\Entity\YardRepository")
+ * @ORM\Table(name="projects")
+ * @ORM\Entity(repositoryClass="Pugbo\Bundle\EventhorBundle\Entity\ProjectRepository")
  */
-class Yard
+class Project
 {
     /**
      * @var integer
@@ -56,7 +56,7 @@ class Yard
      * Set title
      *
      * @param  string $title
-     * @return Yard
+     * @return Project
      */
     public function setTitle($title)
     {
@@ -79,7 +79,7 @@ class Yard
      * Set description
      *
      * @param  string $description
-     * @return Yard
+     * @return Project
      */
     public function setDescription($description)
     {
@@ -102,7 +102,7 @@ class Yard
      * Set open
      *
      * @param  boolean $open
-     * @return Yard
+     * @return Project
      */
     public function setOpen($open)
     {

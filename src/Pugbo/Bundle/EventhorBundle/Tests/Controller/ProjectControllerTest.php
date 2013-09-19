@@ -5,31 +5,31 @@ namespace Pugbo\Bundle\EventhorBundle\Tests\Controller;
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
 /**
- * Class YardControllerTest
+ * Class ProjectControllerTest
  * @package Pugbo\Bundle\EventhorBundle\Tests\Controller
  */
-class YardControllerTest extends WebTestCase
+class ProjectControllerTest extends WebTestCase
 {
     public function testNewPageSimple()
     {
         $client = static::createClient();
 
-        $crawler = $client->request('GET', '/yards/new');
+        $crawler = $client->request('GET', '/projects/new');
 
         $this->assertEquals(200, $client->getResponse()->getStatusCode(), 'Status code should be 200');
         $this->assertTrue($crawler->filter('html:contains("EvenThor")')->count() > 0);
     }
 
-    public function testNewYard()
+    public function testNewProject()
     {
         $client = static::createClient();
 
-        $crawler = $client->request('GET', '/yards/new');
+        $crawler = $client->request('GET', '/projects/new');
         $buttonCrawlerNode = $crawler->selectButton('submit');
         $form = $buttonCrawlerNode->form();
 
-        $form['pugbo_bundle_eventhorbundle_yardtype[title]'] = 'Some cool title';
-        $form['pugbo_bundle_eventhorbundle_yardtype[description]'] = 'Some cool description';
+        $form['pugbo_bundle_eventhorbundle_projecttype[title]'] = 'Some cool title';
+        $form['pugbo_bundle_eventhorbundle_projecttype[description]'] = 'Some cool description';
 
         $response = $client->submit($form);
 
