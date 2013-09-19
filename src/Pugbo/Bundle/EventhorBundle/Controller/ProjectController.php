@@ -15,17 +15,17 @@ class ProjectController extends Controller
 {
     /**
      * @Template()
-     * @param Request $request
+     * @param  Request $request
      * @return array
      */
     public function newAction(Request $request)
     {
         $form = $this->createForm(new ProjectType());
 
-        if($request->getMethod() === 'POST') {
+        if ($request->getMethod() === 'POST') {
             $form->bind($request);
 
-            if($form->isValid()) {
+            if ($form->isValid()) {
                 $project = $form->getData();
 
                 $objectManager = $this

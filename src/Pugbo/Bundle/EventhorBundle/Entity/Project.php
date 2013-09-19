@@ -55,7 +55,7 @@ class Project
     /**
      * Set title
      *
-     * @param  string $title
+     * @param  string  $title
      * @return Project
      */
     public function setTitle($title)
@@ -78,7 +78,7 @@ class Project
     /**
      * Set description
      *
-     * @param  string $description
+     * @param  string  $description
      * @return Project
      */
     public function setDescription($description)
