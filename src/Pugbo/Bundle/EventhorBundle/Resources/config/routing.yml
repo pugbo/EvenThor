@@ -1,3 +1,7 @@
 eventhor_main_homepage:
     pattern:  /hello/{name}
     defaults: { _controller: PugboEventhorBundle:Default:index }
+
+pugbo_eventhor_project_new:
+    pattern: /projects/new
+    defaults: { _controller: PugboEventhorBundle:Project:new }
